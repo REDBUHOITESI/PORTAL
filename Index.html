@@ -1,3 +1,98 @@
-<a href="http://172.10.0.2:8080/portal/auth?username=anonymous">
-   <button>ENTRAR AL INTERNET</button>
-</a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITESI - Portal de Acceso</title>
+    <style>
+        /* Estilos para el fondo blanco y centrado total */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff; /* Fondo Blanco */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ocupa todo el alto de la pantalla */
+            color: #333;
+        }
+
+        /* Contenedor principal (la "tarjeta") */
+        .portal-container {
+            text-align: center;
+            padding: 40px;
+            border-radius: 12px;
+            /* Una sombra suave para darle profundidad sobre el blanco */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            width: 90%;
+            max-width: 400px; /* No se hace gigante en PC */
+            border: 1px solid #f0f0f0; /* Borde muy sutil */
+        }
+
+        /* Estilo para el título solicitado */
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #004a99; /* Un azul institucional, cámbialo si prefieres otro */
+            margin-bottom: 10px;
+            text-transform: uppercase; /* Todo en mayúsculas */
+            letter-spacing: 1px;
+        }
+
+        /* Subtítulo o instrucción */
+        p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        /* Estilo para el botón de Aceptar */
+        .btn-aceptar {
+            background-color: #007bff; /* Azul vibrante para el botón */
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 30px; /* Bordes redondeados */
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            text-decoration: none; /* Quita el subrayado del enlace */
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0,123,255,0.3);
+        }
+
+        /* Efectos visuales al pasar el mouse o tocar */
+        .btn-aceptar:hover {
+            background-color: #0056b3; /* Azul más oscuro al hacer hover */
+            box-shadow: 0 6px 20px rgba(0,123,255,0.4);
+        }
+
+        .btn-aceptar:active {
+            transform: scale(0.97); /* Efecto de "presionado" */
+        }
+
+        /* Enlace que envuelve el botón, crucial para que funcione */
+        .login-link {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="portal-container">
+        <h1>ITESI</h1>
+        <p style="font-weight: bold; color: #555; margin-top: -5px;">Portal Pruebas</p>
+        
+        <p>Bienvenido a la red Wi-Fi de pruebas. Para navegar, por favor acepta los términos de uso.</p>
+        
+        <a href="http://172.10.0.2:8080/portal/auth?username=anonymous" class="login-link">
+            <button class="btn-aceptar">ACEPTAR</button>
+        </a>
+        
+        <p style="font-size: 12px; color: #999; margin-top: 30px;">© 2024 ITESI - Departamento de Redes</p>
+    </div>
+
+</body>
+</html>
